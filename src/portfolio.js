@@ -53,12 +53,6 @@ const socialMediaLinks = [
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
   {
-    name: "YouTube",
-    link: "https://www.youtube.com/channel/UC6476V0a9amWpAggAFuqvdA",
-    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
-    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
-  },
-  {
     name: "Gmail",
     link: "mailto:cedricdecruw@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
@@ -151,6 +145,27 @@ const skills = {
           fontAwesomeClassname: "simple-icons:react",
           style: {
             color: "#61DAFB",
+          },
+        },
+        {
+          skillName: "VueJS",
+          fontAwesomeClassname: "simple-icons:vue-dot-js",
+          style: {
+            color: "#4FC08D",
+          },
+        },
+        {
+          skillName: "Sfelte",
+          fontAwesomeClassname: "simple-icons:svelte",
+          style: {
+            color: "#FF3E00",
+          },
+        },
+        {
+          skillName: "redwoodJS",
+          fontAwesomeClassname: "simple-icons:redwoodjs",
+          style: {
+            color: "#FF3E00",
           },
         },
         {
@@ -248,6 +263,13 @@ const skills = {
           style: {
             color: "#181717",
           }
+        },
+        {
+          skillName: "Gitlab",
+          fontAwesomeClassname: "simple-icons:gitlab",
+          style: {
+            color: "#FCA121",
+          },
         },
         {
           skillName: "Zenodo",
@@ -521,7 +543,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+    "I have been worked in a Non-Profit Organization and also have done some freelancing projects. I have also worked as a volunteer in various organizations. I love to explore new technologies and leverage them to solve real-life problems.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -535,7 +557,7 @@ const experience = {
           duration: "Jul 2019 - Present",
           location: "Oostende, Belgium",
           description:
-            "I am working on the development of the Open Science Platform for the Belgian Marine Research Infrastructure. The platform is built on top of the CKAN open source data portal software. I am also involved in the development of the Open Science Data Catalogue, a data catalogue for marine research data. The catalogue is built on top of the Open Data for Research (OD4R) data catalogue software.",
+            "I am working on the development in the Open Science Team of the datacenter department. I am also involved in the development of the Open Science Data Catalogue, a data catalogue for marine research data. The catalogue is built on top of the Open Data for Research (OD4R) data catalogue software.",
           color: "#0879bf",
         }
         
