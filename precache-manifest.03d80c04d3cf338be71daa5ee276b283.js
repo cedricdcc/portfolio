@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d7e076827f4d331f7d17a78013657f8",
+    "revision": "acc21b882d64b3e316ca6051201ddb7f",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "5fa815ff9c97e119de8a",
-    "url": "/portfolio/static/css/main.f3e500c8.chunk.css"
+    "revision": "010e393fc9795129dbc9",
+    "url": "/portfolio/static/css/main.d12910f0.chunk.css"
   },
   {
-    "revision": "52954ba90c463b6c2b04",
-    "url": "/portfolio/static/js/2.a612d190.chunk.js"
+    "revision": "9b7f8eee86fa09d4c8a1",
+    "url": "/portfolio/static/js/2.12bfca2a.chunk.js"
   },
   {
-    "revision": "5fa815ff9c97e119de8a",
-    "url": "/portfolio/static/js/main.4028676a.chunk.js"
+    "revision": "010e393fc9795129dbc9",
+    "url": "/portfolio/static/js/main.e32785da.chunk.js"
   },
   {
     "revision": "715110702c109a23bf4b",
@@ -262,6 +262,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0993e3246bf5146154391a0afef79b03",
     "url": "/portfolio/static/media/tiktok_logo.0993e324.png"
+  },
+  {
+    "revision": "a1dd0fa686a07f02e7086e361d58ccec",
+    "url": "/portfolio/static/media/ubo_logo.a1dd0fa6.jpg"
   },
   {
     "revision": "d63630893eb8cb64af65f395d393c481",

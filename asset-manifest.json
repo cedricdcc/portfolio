@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f3e500c8.chunk.css",
-    "main.js": "/portfolio/static/js/main.4028676a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.4028676a.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.d12910f0.chunk.css",
+    "main.js": "/portfolio/static/js/main.e32785da.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e32785da.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.9139f6d7.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.9139f6d7.js.map",
-    "static/js/2.a612d190.chunk.js": "/portfolio/static/js/2.a612d190.chunk.js",
-    "static/js/2.a612d190.chunk.js.map": "/portfolio/static/js/2.a612d190.chunk.js.map",
+    "static/js/2.12bfca2a.chunk.js": "/portfolio/static/js/2.12bfca2a.chunk.js",
+    "static/js/2.12bfca2a.chunk.js.map": "/portfolio/static/js/2.12bfca2a.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.071154fadfa146bf9bbc090d642d11f5.js": "/portfolio/precache-manifest.071154fadfa146bf9bbc090d642d11f5.js",
+    "precache-manifest.03d80c04d3cf338be71daa5ee276b283.js": "/portfolio/precache-manifest.03d80c04d3cf338be71daa5ee276b283.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.f3e500c8.chunk.css.map": "/portfolio/static/css/main.f3e500c8.chunk.css.map",
+    "static/css/main.d12910f0.chunk.css.map": "/portfolio/static/css/main.d12910f0.chunk.css.map",
     "static/media/index.css": "/portfolio/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/Howest.jpg": "/portfolio/static/media/Howest.07fe17de.jpg",
     "static/media/Howest.png": "/portfolio/static/media/Howest.cc951795.png",
@@ -51,13 +51,14 @@
     "static/media/talksCardBack.svg": "/portfolio/static/media/talksCardBack.6ac91b16.svg",
     "static/media/talksCardBackAlt.svg": "/portfolio/static/media/talksCardBackAlt.3fa54242.svg",
     "static/media/tiktok_logo.png": "/portfolio/static/media/tiktok_logo.0993e324.png",
+    "static/media/ubo_logo.jpg": "/portfolio/static/media/ubo_logo.a1dd0fa6.jpg",
     "static/media/ui_ux_design.svg": "/portfolio/static/media/ui_ux_design.d6363089.svg",
     "static/media/vliz_logo.png": "/portfolio/static/media/vliz_logo.062de450.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9139f6d7.js",
-    "static/js/2.a612d190.chunk.js",
-    "static/css/main.f3e500c8.chunk.css",
-    "static/js/main.4028676a.chunk.js"
+    "static/js/2.12bfca2a.chunk.js",
+    "static/css/main.d12910f0.chunk.css",
+    "static/js/main.e32785da.chunk.js"
   ]
 }
