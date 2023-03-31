@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2449e1b468458f471da23e0f4f582041",
+    "revision": "ec6584f171582eb0d1bbd98b62e94791",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "83e5d5d4e0d1cd16b123",
+    "revision": "a9b42afdad571e845a95",
     "url": "/portfolio/static/css/main.d12910f0.chunk.css"
   },
   {
-    "revision": "9b7f8eee86fa09d4c8a1",
-    "url": "/portfolio/static/js/2.12bfca2a.chunk.js"
+    "revision": "57e59c6236358405e0e2",
+    "url": "/portfolio/static/js/2.9205f1be.chunk.js"
   },
   {
-    "revision": "83e5d5d4e0d1cd16b123",
-    "url": "/portfolio/static/js/main.94360e3e.chunk.js"
+    "revision": "a9b42afdad571e845a95",
+    "url": "/portfolio/static/js/main.79b25fdd.chunk.js"
   },
   {
     "revision": "715110702c109a23bf4b",
@@ -74,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a56562d4f6d4793dc92955c93eaec41e",
     "url": "/portfolio/static/media/cedric_decruw.a56562d4.png"
+  },
+  {
+    "revision": "82730567838590b0b3d6f7f0c72a8dfb",
+    "url": "/portfolio/static/media/certificaat_linked_data.82730567.png"
   },
   {
     "revision": "cacbc42b661f39344af81c631d8d36a9",
