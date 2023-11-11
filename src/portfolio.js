@@ -51,6 +51,12 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
+  {
+    name: "ORCID",
+    link: "https://orcid.org/0000-0001-6387-5988",
+    fontAwesomeIcon: "fa-orcid", // Replace with actual ORCID icon if available
+    backgroundColor: "#A6CE39", // ORCID's brand color
+  }
 ];
 
 const skills = {
