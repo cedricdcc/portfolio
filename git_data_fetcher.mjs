@@ -13,7 +13,7 @@ const query_pr = {
   query: `
 	query {
 	  user(login: "${openSource.githubUserName}"){
-	    pullRequests(last: 100, orderBy: {field: CREATED_AT, direction: DESC}){
+	    pullRequests(last: 1000, orderBy: {field: CREATED_AT, direction: DESC}){
       totalCount
       nodes{
         id
@@ -50,7 +50,7 @@ const query_issue = {
   query: `query{
 
 		user(login: "${openSource.githubUserName}") {
-    issues(last: 100, orderBy: {field:CREATED_AT, direction: DESC}){
+    issues(last: 10000, orderBy: {field:CREATED_AT, direction: DESC}){
       totalCount
       nodes{
       	id
@@ -85,7 +85,7 @@ const query_issue = {
 const query_org = {
   query: `query{
 	user(login: "${openSource.githubUserName}") {
-	    repositoriesContributedTo(last: 100){
+	    repositoriesContributedTo(last: 10000){
 	      totalCount
 	      nodes{
 	        owner{
