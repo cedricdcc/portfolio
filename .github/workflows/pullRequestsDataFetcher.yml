@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - all
-
+  schedule:
+      - cron: '0 0 * * SUN'
 jobs:
   pullRequestRelease:
     runs-on: ubuntu-latest
