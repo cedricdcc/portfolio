@@ -3,7 +3,7 @@ name: Pull Request Creation
 on:
   push:
     branches:
-      - all
+      - main
   schedule:
       - cron: '0 0 * * SUN'
 jobs:
