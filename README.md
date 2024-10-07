@@ -20,7 +20,7 @@
 
 # Customize it to make your own portfolio ✏️
 
-In this project, there are basically 4 things that you need to change to customize this to anyone else's portfolio: **package.json**, **Personal Information**, **Github Information** and **Splash Logo**.
+In this project, there are basically 4 things that you need to change to customize this to anyone else's portfolio: **package.json**, **Personal Information**, **Github Information** and **Splash Logo**
 
 ### package.json
 
