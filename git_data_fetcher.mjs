@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import { graphql } from "@octokit/graphql";
 import fs from "fs";
 import dotenv from "dotenv";
 
@@ -9,10 +9,15 @@ const openSource = {
   githubUserName: process.env.GITHUB_USERNAME,
 };
 
-const query_pr = {
-  query: `
-	query {
-	  user(login: "${openSource.githubUserName}"){
+const graphqlWithAuth = graphql.defaults({
+  headers: {
+    authorization: `token ${openSource.githubConvertedToken}`,
+  },
+});
+
+const query_pr = `
+	query($userName: String!) {
+	  user(login: $userName){
 	    pullRequests(last: 1000, orderBy: {field: CREATED_AT, direction: DESC}){
       totalCount
       nodes{
@@ -43,13 +48,11 @@ const query_pr = {
     }
 	}
 }
-	`,
-};
+	`;
 
-const query_issue = {
-  query: `query{
+const query_issue = `query($userName: String!){
 
-		user(login: "${openSource.githubUserName}") {
+		user(login: $userName) {
     issues(last: 10000, orderBy: {field:CREATED_AT, direction: DESC}){
       totalCount
       nodes{
@@ -79,12 +82,10 @@ const query_issue = {
     }
   }
 
-	}`,
-};
+	}`;
 
-const query_org = {
-  query: `query{
-	user(login: "${openSource.githubUserName}") {
+const query_org = `query($userName: String!){
+	user(login: $userName) {
 	    repositoriesContributedTo(last: 10000){
 	      totalCount
 	      nodes{
@@ -96,13 +97,11 @@ const query_org = {
 	      }
 	    }
 	  }
-	}`,
-};
+	}`;
 
-const query_pinned_projects = {
-  query: `
-	query { 
-	  user(login: "${openSource.githubUserName}") { 
+const query_pinned_projects = `
+	query($userName: String!) { 
+	  user(login: $userName) { 
 	    pinnedItems(first: 6, types: REPOSITORY) {
 	      totalCount
 	      nodes{
@@ -123,26 +122,28 @@ const query_pinned_projects = {
 		  }
 	  }
 	}
-	`,
+	`;
+
+const languages_icons = {
+  Python: "logos-python",
+  "Jupyter Notebook": "logos-jupyter",
+  HTML: "logos-html-5",
+  CSS: "logos-css-3",
+  JavaScript: "logos-javascript",
+  "C#": "logos-c-sharp",
+  Java: "logos-java",
+  Shell: "arcticons:shell",
+  Ruby: "logos:ruby",
+  PHP: "logos-php",
+  Dockerfile: "simple-icons:docker",
+  Rust: "logos-rust",
 };
 
-const baseUrl = "https://api.github.com/graphql";
-
-const headers = {
-  "Content-Type": "application/json",
-  Authorization: "bearer " + openSource.githubConvertedToken,
-};
-
-fetch(baseUrl, {
-  method: "POST",
-  headers: headers,
-  body: JSON.stringify(query_pr),
-})
-  .then((response) => response.text())
-  .then((txt) => {
-    const data = JSON.parse(txt);
+// Fetch Pull Requests
+graphqlWithAuth(query_pr, { userName: openSource.githubUserName })
+  .then((data) => {
     var cropped = { data: [] };
-    cropped["data"] = data["data"]["user"]["pullRequests"]["nodes"];
+    cropped["data"] = data["user"]["pullRequests"]["nodes"];
 
     var open = 0;
     var closed = 0;
@@ -171,16 +172,11 @@ fetch(baseUrl, {
   })
   .catch((error) => console.log(JSON.stringify(error)));
 
-fetch(baseUrl, {
-  method: "POST",
-  headers: headers,
-  body: JSON.stringify(query_issue),
-})
-  .then((response) => response.text())
-  .then((txt) => {
-    const data = JSON.parse(txt);
+// Fetch Issues
+graphqlWithAuth(query_issue, { userName: openSource.githubUserName })
+  .then((data) => {
     var cropped = { data: [] };
-    cropped["data"] = data["data"]["user"]["issues"]["nodes"];
+    cropped["data"] = data["user"]["issues"]["nodes"];
 
     var open = 0;
     var closed = 0;
@@ -206,15 +202,10 @@ fetch(baseUrl, {
   })
   .catch((error) => console.log(JSON.stringify(error)));
 
-fetch(baseUrl, {
-  method: "POST",
-  headers: headers,
-  body: JSON.stringify(query_org),
-})
-  .then((response) => response.text())
-  .then((txt) => {
-    const data = JSON.parse(txt);
-    const orgs = data["data"]["user"]["repositoriesContributedTo"]["nodes"];
+// Fetch Organizations
+graphqlWithAuth(query_org, { userName: openSource.githubUserName })
+  .then((data) => {
+    const orgs = data["user"]["repositoriesContributedTo"]["nodes"];
     var newOrgs = { data: [] };
     for (var i = 0; i < orgs.length; i++) {
       var obj = orgs[i]["owner"];
@@ -245,31 +236,10 @@ fetch(baseUrl, {
   })
   .catch((error) => console.log(JSON.stringify(error)));
 
-const languages_icons = {
-  Python: "logos-python",
-  "Jupyter Notebook": "logos-jupyter",
-  HTML: "logos-html-5",
-  CSS: "logos-css-3",
-  JavaScript: "logos-javascript",
-  "C#": "logos-c-sharp",
-  Java: "logos-java",
-  Shell: "arcticons:shell",
-  Ruby: "logos:ruby",
-  PHP: "logos-php",
-  Dockerfile: "simple-icons:docker",
-  Rust: "logos-rust",
-};
-
-fetch(baseUrl, {
-  method: "POST",
-  headers: headers,
-  body: JSON.stringify(query_pinned_projects),
-})
-  .then((response) => response.text())
-  .then((txt) => {
-    const data = JSON.parse(txt);
-    // console.log(txt);
-    const projects = data["data"]["user"]["pinnedItems"]["nodes"];
+// Fetch Pinned Projects
+graphqlWithAuth(query_pinned_projects, { userName: openSource.githubUserName })
+  .then((data) => {
+    const projects = data["user"]["pinnedItems"]["nodes"];
     var newProjects = { data: [] };
     for (var i = 0; i < projects.length; i++) {
       var obj = projects[i];

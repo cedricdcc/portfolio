@@ -1,1 +1,134 @@
-{"data":[{"id":"R_kgDOI4a5zQ","name":"Eerstelijnsrapportage","createdAt":"2023-02-01T10:19:04Z","url":"https://github.com/cedricdcc/Eerstelijnsrapportage","description":null,"isFork":true,"languages":[{"name":"JavaScript","iconifyClass":"logos-javascript"},{"name":"CSS","iconifyClass":"logos-css-3"},{"name":"HTML","iconifyClass":"logos-html-5"}]},{"id":"R_kgDOHiJcuA","name":"eurobis_imis_aphia_id_algorithm","createdAt":"2022-06-20T19:14:18Z","url":"https://github.com/cedricdcc/eurobis_imis_aphia_id_algorithm","description":"algorithm to determine whioch aphia ids get to be used ","isFork":false,"languages":[{"name":"Python","iconifyClass":"logos-python"},{"name":"HTML","iconifyClass":"logos-html-5"},{"name":"Shell","iconifyClass":"arcticons:shell"}]},{"id":"R_kgDOIn9E8g","name":"readthelod.github.io","createdAt":"2022-12-15T20:44:11Z","url":"https://github.com/cedricdcc/readthelod.github.io","description":"website for this grassroots org","isFork":true,"languages":[{"name":"Ruby","iconifyClass":"logos:ruby"},{"name":"HTML","iconifyClass":"logos-html-5"}]}]}
+{
+  "data": [
+    {
+      "id": "R_kgDOI4a5zQ",
+      "name": "Eerstelijnsrapportage",
+      "createdAt": "2023-02-01T10:19:04Z",
+      "url": "https://github.com/cedricdcc/Eerstelijnsrapportage",
+      "description": null,
+      "isFork": true,
+      "languages": [
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOHiJcuA",
+      "name": "eurobis_imis_aphia_id_algorithm",
+      "createdAt": "2022-06-20T19:14:18Z",
+      "url": "https://github.com/cedricdcc/eurobis_imis_aphia_id_algorithm",
+      "description": "algorithm to determine whioch aphia ids get to be used ",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "Shell",
+          "iconifyClass": "arcticons:shell"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOIn9E8g",
+      "name": "readthelod.github.io",
+      "createdAt": "2022-12-15T20:44:11Z",
+      "url": "https://github.com/cedricdcc/readthelod.github.io",
+      "description": "website for this grassroots org",
+      "isFork": true,
+      "languages": [
+        {
+          "name": "Ruby",
+          "iconifyClass": "logos:ruby"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDO_demo_emobon",
+      "name": "demo_emobon_kgap",
+      "createdAt": "2025-10-28T19:25:14Z",
+      "url": "https://github.com/cedricdcc/demo_emobon_kgap",
+      "description": "A small demo that integrates GraphDB and OLLAMA for natural language querying of RDF data.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "logos-docker"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDO_dump_dset",
+      "name": "dump-dset-catalogue-docker",
+      "createdAt": "2025-10-28T19:25:21Z",
+      "url": "https://github.com/emo-bon/dump-dset-catalogue-docker",
+      "description": "A dockerized executor for the sema.harvest module to dump the dataset catalogue from emobon.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Docker",
+          "iconifyClass": "logos-docker"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDO_rocrate_pages",
+      "name": "rocrate-to-pages",
+      "createdAt": "2025-10-28T19:25:26Z",
+      "url": "https://github.com/vliz-be-opsci/rocrate-to-pages",
+      "description": "A GitHub Action to generate GitHub Pages sites from repositories containing RO-Crates.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "GitHub Actions",
+          "iconifyClass": "logos-github"
+        },
+        {
+          "name": "RO-Crate",
+          "iconifyClass": "logos-rocrate"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDO_py_sema",
+      "name": "py-sema",
+      "createdAt": "2025-10-28T19:29:26Z",
+      "url": "https://github.com/vliz-be-opsci/py-sema",
+      "description": "Parent repository for packages involving semantic manipulation of RDF data.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "RDF",
+          "iconifyClass": "logos-rdf"
+        }
+      ]
+    }
+  ]
+}
