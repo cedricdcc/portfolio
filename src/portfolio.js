@@ -23,9 +23,8 @@ const greeting = {
   logo_name: "CedricDecruw",
   nickname: "Alain_Provist",
   subTitle:
-  "I'm a bio-informatics graduate turned full stack developer with expertise in data analysis and interpretation. I build open source environmental applications using Python, JavaScript, React, and Node.js. Passionate about collaboration and making a positive impact, I use technology to tackle real-world problems.",
-  resumeLink:
-    "https://resume.io/r/JMmwKxZlO",
+    "Bio-informatics graduate turned full-stack developer. I focus on data analysis and RDF data wrangling, and build open-source environmental tools with Python, JavaScript, React, and Node.js. I enjoy collaborating to solve real-world problems.",
+  resumeLink: "https://resume.io/r/JMmwKxZlO",
   portfolio_repository: "https://github.com/cedricdcc/portfolio",
   githubProfile: "https://github.com/cedricdcc",
 };
@@ -56,7 +55,7 @@ const socialMediaLinks = [
     link: "https://orcid.org/0000-0001-6387-5988",
     fontAwesomeIcon: "fa-orcid", // Replace with actual ORCID icon if available
     backgroundColor: "#A6CE39", // ORCID's brand color
-  }
+  },
 ];
 
 const skills = {
@@ -68,8 +67,16 @@ const skills = {
         "⚡ Strong skills in data cleaning, data wrangling, and statistical analysis to draw insights from data.",
         "⚡ Proficiency in programming languages such as Python, R, and SQL",
         "⚡ Skilled in creating compelling data visualizations and dashboards that convey complex information in a clear and concise manner.",
+        "⚡ Using RDF and SPARQL to search through complex datasets and extract meaningful insights.",
       ],
       softwareSkills: [
+        {
+          skillName: "RDF",
+          fontAwesomeClassname: "vscode-icons:file-type-sparql",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
         {
           skillName: "SQL",
           fontAwesomeClassname: "logos:mysql-icon",
@@ -107,7 +114,7 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         "⚡ Building responsive website front end using React-Redux",
-        "⚡ Creating application backend in Node, Express & Flask"
+        "⚡ Creating application backend in Node, Express & Flask",
       ],
       softwareSkills: [
         {
@@ -148,7 +155,7 @@ const skills = {
         },
         {
           skillName: "VueJS",
-          fontAwesomeClassname: "simple-icons:vue-dot-js",
+          fontAwesomeClassname: "material-icon-theme:vue",
           style: {
             color: "#4FC08D",
           },
@@ -169,7 +176,7 @@ const skills = {
         },
         {
           skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          fontAwesomeClassname: "material-icon-theme:nodejs",
           style: {
             color: "#339933",
           },
@@ -201,7 +208,7 @@ const skills = {
           style: {
             color: "#777BB4",
           },
-        }
+        },
       ],
     },
     {
@@ -209,11 +216,9 @@ const skills = {
       fileName: "CloudInfraImg",
       skills: [
         "⚡ Experience working on multiple cloud platforms",
-        "⚡ Proficiency in containerization with Kubernetes and Docker.",
-        "⚡ Strong understanding of Kubernetes architecture and components, and advanced knowledge of the Docker CLI.",
-        "⚡ Experience deploying and managing scalable applications on the Kubernetes platform and building custom solutions with Kubernetes APIs.",
+        "⚡ Proficiency in containerization with Docker.",
+        "⚡ Strong understanding of the Docker CLI.",
         "⚡ Proficiency in creating and managing workflows with GitHub Actions to automate software development processes, including building, testing, and deploying code.",
-
       ],
       softwareSkills: [
         {
@@ -235,13 +240,6 @@ const skills = {
           fontAwesomeClassname: "simple-icons:docker",
           style: {
             color: "#1488C6",
-          },
-        },
-        {
-          skillName: "Kubernetes",
-          fontAwesomeClassname: "simple-icons:kubernetes",
-          style: {
-            color: "#326CE5",
           },
         },
         {
@@ -268,14 +266,14 @@ const skills = {
           fontAwesomeClassname: "mdi:git",
           style: {
             color: "#F05032",
-          }
+          },
         },
         {
           skillName: "Github",
           fontAwesomeClassname: "fa:github",
           style: {
             color: "#181717",
-          }
+          },
         },
         {
           skillName: "Gitlab",
@@ -299,7 +297,7 @@ const skills = {
           },
         },
       ],
-    }
+    },
     /*
     {
       title: "UI/UX Design",
@@ -375,11 +373,13 @@ const degrees = {
         "⚡ Analyze and visualize biological networks, including metabolic and regulatory networks, to gain insights into biological processes.",
         "⚡ Machine learning and artificial intelligence techniques to analyze biological data and make predictions about biological systems.",
       ],
-      website_link: "https://www.howest.be/nl/opleidingen/bachelor-na-bachelor/advanced-bachelor-of-bioinformatics",
+      website_link:
+        "https://www.howest.be/nl/opleidingen/bachelor-na-bachelor/advanced-bachelor-of-bioinformatics",
     },
     {
       title: "Howest, de Hogeschool West-Vlaanderen",
-      subtitle: "Bachelor in  biomedical laboratory sciences/technology (farmaceutical)",
+      subtitle:
+        "Bachelor in  biomedical laboratory sciences/technology (farmaceutical)",
       logo_path: "Howest.png",
       alt_name: "HOWEST",
       duration: "2015 - 2018",
@@ -388,11 +388,11 @@ const degrees = {
         "⚡ Design and conduct scientific experiments, analyze data, and interpret results, which are valuable skills in many research-related fields.",
         "⚡ Strong understanding of quality assurance and regulatory compliance in laboratory settings, which is essential for ensuring accurate test results and maintaining compliance with industry regulations.",
         "⚡ Ability to effectively communicate scientific findings to diverse audiences, including researchers, policymakers, and the public.",
-        "⚡ critical thinking and problem-solving skills, which are essential for identifying and addressing complex laboratory issues and improving laboratory processes and procedures."
+        "⚡ critical thinking and problem-solving skills, which are essential for identifying and addressing complex laboratory issues and improving laboratory processes and procedures.",
       ],
-      website_link: "https://www.howest.be/nl/opleidingen/bachelor/biomedische-laboratoriumtechnologie/farmaceutische-en-biologische",
+      website_link:
+        "https://www.howest.be/nl/opleidingen/bachelor/biomedische-laboratoriumtechnologie/farmaceutische-en-biologische",
     },
-    
   ],
 };
 
@@ -402,11 +402,10 @@ const certifications = {
       title: "Linked Data and Solid",
       subtitle: "- University of Gent",
       logo_path: "UGent.png",
-      certificate_link:
-        "./certificaat_linked_data.png",
+      certificate_link: "./certificaat_linked_data.png",
       alt_name: "univiversity here",
       color_code: "#8C151599",
-    }
+    },
   ],
 };
 
@@ -431,7 +430,7 @@ const experience = {
           description:
             "I am working on the development in the Open Science Team of the datacenter department. I am also involved in the development of the Open Science Data Catalogue, a data catalogue for marine research data. The catalogue is built on top of the Open Data for Research (OD4R) data catalogue software.",
           color: "#0879bf",
-        }
+        },
       ],
     },
     {
@@ -442,7 +441,7 @@ const experience = {
           company: "Vlaams Instituut voor de zee (VLIZ)",
           company_url: "https://www.vliz.be/en",
           logo_path: "vliz_logo.png",
-          duration: "Apr 2019 - Jun 2019",  
+          duration: "Apr 2019 - Jun 2019",
           location: "Oostende, Belgium",
           description:
             "Connecting APHIA database to NCBI taxonomy browser. APHIA is a database of marine metagenomic data. The goal of the project is to make the APHIA database searchable through the NCBI taxonomy browser. The project is done in collaboration with the HOWEST.",
@@ -455,9 +454,10 @@ const experience = {
           logo_path: "ubo_logo.jpg",
           duration: "Jan 2018 - Jun 2018",
           location: "Brest, France",
-          description:"Screening on inhibition of key cosmetic enzymes and adhesion/growth inhibition of biofilm microorganisms by natural products. The project is done in collaboration with the technical core facility BIODIMAR/LEMAR UMR 6553/UBO.",
+          description:
+            "Screening on inhibition of key cosmetic enzymes and adhesion/growth inhibition of biofilm microorganisms by natural products. The project is done in collaboration with the technical core facility BIODIMAR/LEMAR UMR 6553/UBO.",
           color: "#0879bf",
-        }
+        },
       ],
     },
     {
